@@ -3,6 +3,7 @@ function checkValidation() {
   if (password != "12345") {
     alert("Caution! Password incorrect");
   }else{
-    //something
+    var y=document.getElementById('sendItem');
+    y.className += "leftTransition";
   }
 }
