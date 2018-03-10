@@ -25,4 +25,3 @@ console.log(task[task.length-1]);
 //-------------Exercise 2.2.1 (add value to "task" dynamically. just beside "sleeping")
 task[task.length]='eating';
 console.log(task[task.length-1]);
-//testing
