@@ -22,6 +22,17 @@ var progress1=Number(question2)-1;
 console.log('today you will ' + task[task1] + ' status of work is ' + progress[progress1]);
 console.log(task[task.length-1]);
 */
-//-------------Exercise 2.2.1 (add value to "task" dynamically. just beside "sleeping")
+/*-------------Exercise 2.2.1 (add value to "task" dynamically. just beside "sleeping")
 task[task.length]='eating';
 console.log(task[task.length-1]);
+*/
+
+//------------Exercise 2.3 (call the value of array in random)
+console.log(task[Math.floor(Math.random()* task.length)]);
+console.log(task[Math.floor(Math.random()* task.length)]);
+console.log(task[Math.floor(Math.random()* task.length)]);
+console.log(task[Math.floor(Math.random()* task.length)]);
+console.log(task[Math.floor(Math.random()* task.length)]);
+console.log(task[Math.floor(Math.random()* task.length)]);
+console.log(task[Math.floor(Math.random()* task.length)]);
+console.log(task[Math.floor(Math.random()* task.length)]);
