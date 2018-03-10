@@ -9,7 +9,7 @@ console.log('%cHello world','background-color:green; color:red; font-size: 15px;
 
 
 //---------------Exercise 1.2--------------
-var task = ["cooking", "laundry", "wasshing dishes","sleeping"];
+var task = ["cooking", "laundry", "washing dishes","sleeping"];
 var progress = ["done", "in progress", "to do"];
 
 var question1 = prompt("Which task from 1-" + task.length + "?");
@@ -20,3 +20,4 @@ var progress1=Number(question2)-1;
 //question2;
 
 console.log('today you will ' + task[task1] + ' status of work is ' + progress[progress1]);
+console.log(task[task.length-1]);
