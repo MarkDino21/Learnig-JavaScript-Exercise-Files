@@ -4,3 +4,6 @@ console.log(newHolder);
 //**Challenge: target output
 //['Horse','fish','fish','fish','fish','fish','fish','fish','rabbit',
 //'dog','sheep']
+
+var removed = newHolder.splice(1,2);
+console.log(removed);
