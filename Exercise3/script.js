@@ -5,7 +5,6 @@ console.log(newHolder);
 //['Horse','fish','fish','fish','fish','fish','fish','fish','rabbit',
 //'dog','sheep']
 
-var removed = newHolder.splice(1,2);
-console.log(removed);
-removed.reverse();
-console.log(removed);
+newHolder[10]="Horse";
+newHolder.fill("fish",3,10);
+console.log(newHolder);
