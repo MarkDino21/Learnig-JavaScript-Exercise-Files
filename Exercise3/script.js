@@ -7,3 +7,5 @@ console.log(newHolder);
 
 var removed = newHolder.splice(1,2);
 console.log(removed);
+removed.reverse();
+console.log(removed);
