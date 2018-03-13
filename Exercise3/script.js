@@ -8,3 +8,5 @@ console.log(newHolder);
 newHolder[10]="Horse";
 newHolder.fill("fish",3,10);
 console.log(newHolder);
+newHolder.reverse();
+console.log(newHolder);
