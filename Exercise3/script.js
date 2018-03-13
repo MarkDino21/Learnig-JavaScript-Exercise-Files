@@ -10,3 +10,5 @@ newHolder.fill("fish",3,10);
 console.log(newHolder);
 newHolder.reverse();
 console.log(newHolder);
+newHolder[newHolder.length-1]='sheep';
+console.log(newHolder);
