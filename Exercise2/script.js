@@ -27,7 +27,7 @@ task[task.length]='eating';
 console.log(task[task.length-1]);
 */
 
-//------------Exercise 2.3 (call the value of array in random)
+/*------------Exercise 2.3 (call the value of array in random)
 console.log(task[Math.floor(Math.random()* task.length)]);
 console.log(task[Math.floor(Math.random()* task.length)]);
 console.log(task[Math.floor(Math.random()* task.length)]);
@@ -36,3 +36,4 @@ console.log(task[Math.floor(Math.random()* task.length)]);
 console.log(task[Math.floor(Math.random()* task.length)]);
 console.log(task[Math.floor(Math.random()* task.length)]);
 console.log(task[Math.floor(Math.random()* task.length)]);
+*/
