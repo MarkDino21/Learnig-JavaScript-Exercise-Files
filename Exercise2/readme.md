@@ -1,1 +1,1 @@
-#JavaScript: Console log debugging
+# JavaScript: Console log debugging
