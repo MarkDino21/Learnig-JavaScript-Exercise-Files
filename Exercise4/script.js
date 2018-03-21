@@ -5,5 +5,5 @@ var car ={
   model: "mustang"
 }
 for (var property in car){
-  console.log(property);
+  console.log(property +" "+ car[property]);
 }
