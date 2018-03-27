@@ -8,3 +8,7 @@ val.value = "Hello, World";
 //test2
 output.innerText = "<h1>New Title</h1>";
 val.value = "New text";
+
+//test3
+output.innerHTML = "<h1>New Title</h1>";
+val.value = output.innerText;
