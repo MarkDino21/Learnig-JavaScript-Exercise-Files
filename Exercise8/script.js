@@ -1,9 +1,9 @@
 //--test1 succedded-----
 var output = document.getElementById('output');
-var x= prompt("Enter count of loop");
+var x= Number(prompt("Enter a number of counts to loop"));
 //x= Number(x);
 var i =0;
-if(typeof(x)=='number'){
+if(x>0){
   do {
     i++;
     output.innerHTML += "count " + i + "<br>";
@@ -11,5 +11,5 @@ if(typeof(x)=='number'){
   while (i<x);
 }
 else{
-  alert("Please Enter a number only.");
+  alert("Please Enter a positive and valid number only.");
 }
