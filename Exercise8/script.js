@@ -1,15 +1,15 @@
 //--test1 succedded-----
 var output = document.getElementById('output');
-var x= Number(prompt("Enter a number of counts to loop"));
-//x= Number(x);
-var i =0;
-if(x>0){
-  do {
-    i++;
-    output.innerHTML += "count " + i + "<br>";
-  }
-  while (i<x);
+var x= prompt("Enter a number of counts to loop");
+
+while (isNaN(x)) {
+  alert("Please Enter a valid and positive numbers only.");
+  x= prompt("Enter a number of counts to loop");
 }
-else{
-  alert("Please Enter a positive and valid number only.");
+
+var i=0
+do {
+  output.innerHTML += "count " + i + "<br>";
+  i++;
 }
+while (i<x);
