@@ -7,9 +7,11 @@ while (isNaN(x)) {
   x= prompt("Enter a number of counts to loop");
 }
 
-var i=0
-do {
-  output.innerHTML += "count " + i + "<br>";
-  i++;
+if (x>0){
+  var i=0
+  do {
+    output.innerHTML += "count " + i + "<br>";
+    i++;
+  }
+  while (i<x);
 }
-while (i<x);
