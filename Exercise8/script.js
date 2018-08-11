@@ -25,3 +25,18 @@ function test1ToTest3(){
     }
   }
 }
+
+//--test4: Use Nested loop to create a table with 10 row and 2 col
+function test4() {
+  var output = document.getElementById('output');
+  var html = "<table>"
+  for (var row = 0; row < 10; row++) {
+    html+= "<tr>"
+    for (var col = 0; col < 2; col++) {
+      html+= "<td>" + "col " + col + "</td>";
+    }
+    html+= "</tr>"
+  }
+  html+= "</table>";
+  output.innerHTML+= html;
+}
