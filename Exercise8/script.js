@@ -1,6 +1,9 @@
 //--test1 succedded-----
 //--test2 Succedded-----
 //--test3 Succedded-----
+//--test4 Succedded-----
+//--test5 Succedded-----
+
 function test1ToTest3(){
   var output = document.getElementById('output');
   var x= prompt("Enter a number of counts to loop");
@@ -34,6 +37,24 @@ function test4() {
     html+= "<tr>"
     for (var col = 0; col < 2; col++) {
       html+= "<td>" + "col " + col + "</td>";
+    }
+    html+= "</tr>"
+  }
+  html+= "</table>";
+  output.innerHTML+= html;
+}
+
+//--test5: recreate test4 with 10 row and 5 col. make the content number from 1 to 50
+function test5() {
+  var output = document.getElementById('output');
+  var html = "<table>"
+  var num = 1;
+
+  for (var row = 0; row < 10; row++) {
+    html+= "<tr>"
+    for (var col = 0; col < 5; col++) {
+      html+= "<td>" + "col " + num + "</td>";
+      num++;
     }
     html+= "</tr>"
   }
