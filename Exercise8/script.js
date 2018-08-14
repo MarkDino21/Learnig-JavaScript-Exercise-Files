@@ -75,4 +75,18 @@ function test6() {
   output.innerHTML+= "Total: " + total + "<br>";
 }
 
-test6();
+//--test7: reCreate test6 with def method using if condition
+function test7() {
+  var output = document.getElementById('output');
+  var total = 0;
+
+  for (var i = 0; i <= 1000; i++) {
+    if (i % 5 === 0) {
+      total+=i;
+      output.innerHTML+="Value of i = " + i + ". Sub total = " + total + "<br>";
+    }
+  }
+
+  output.innerHTML+= "Grand Total: " + total + "<br>";
+}
+test7();
