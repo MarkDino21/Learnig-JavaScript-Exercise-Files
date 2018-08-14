@@ -3,7 +3,7 @@
 //--test3 Succedded-----
 //--test4 Succedded-----
 //--test5 Succedded-----
-
+//--test6 Succedded-----
 function test1ToTest3(){
   var output = document.getElementById('output');
   var x= prompt("Enter a number of counts to loop");
@@ -61,3 +61,18 @@ function test5() {
   html+= "</table>";
   output.innerHTML+= html;
 }
+
+//--test6: Loop to 1000, multiply its number to 5, then add them all to the last
+function test6() {
+  var output = document.getElementById('output');
+  var total = 0;
+
+  for (var i = 0; i <= 1000; i+=5) {
+    total+=i;
+    output.innerHTML+= i + "<br>";
+  }
+
+  output.innerHTML+= "Total: " + total + "<br>";
+}
+
+test6();
