@@ -6,8 +6,10 @@
 //--test6 Succedded-----
 //--test7 Succedded-----
 //--test8 Succedded-----
+
+var output = document.getElementById('output');
+
 function test1ToTest3(){
-  var output = document.getElementById('output');
   var x= prompt("Enter a number of counts to loop");
 
   while (Number.isNaN(parseInt(x))) {
@@ -33,7 +35,6 @@ function test1ToTest3(){
 
 //--test4: Use Nested loop to create a table with 10 row and 2 col
 function test4() {
-  var output = document.getElementById('output');
   var html = "<table>"
   for (var row = 0; row < 10; row++) {
     html+= "<tr>"
@@ -48,7 +49,6 @@ function test4() {
 
 //--test5: recreate test4 with 10 row and 5 col. make the content number from 1 to 50
 function test5() {
-  var output = document.getElementById('output');
   var html = "<table>"
   var num = 1;
 
@@ -66,7 +66,6 @@ function test5() {
 
 //--test6: Loop to 1000, multiply its number to 5, then add them all to the last
 function test6() {
-  var output = document.getElementById('output');
   var total = 0;
 
   for (var i = 0; i <= 1000; i+=5) {
@@ -79,7 +78,6 @@ function test6() {
 
 //--test7: reCreate test6 with def method using if condition
 function test7() {
-
   var total = 0;
 
   for (var i = 0; i <= 1000; i++) {
@@ -95,7 +93,6 @@ function test7() {
 
 //--test8: Use loop in Array
 function test8() {
-  var output = document.getElementById('output');
   var users = ['Mark', 'Dino', 'Jero', 'Ethan'];
   for (var i = 0; i < users.length; i++) {
     output.innerHTML+= users[i] + '<br>';
