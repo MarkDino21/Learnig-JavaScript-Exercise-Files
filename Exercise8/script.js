@@ -98,4 +98,12 @@ function test8() {
     output.innerHTML+= users[i] + '<br>';
   }
 }
-test8();
+
+//--test9: Use loop in Object
+function test9() {
+  var org = {color: 'green', hair: "orange", weapon: 'Axe', level: 1, power: 100};
+  for (var i in org) {
+    output.innerHTML += i + " = " + org[i] + "<br>";
+  }
+}
+ test9();
