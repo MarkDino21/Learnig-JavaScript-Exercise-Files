@@ -4,6 +4,8 @@
 //--test4 Succedded-----
 //--test5 Succedded-----
 //--test6 Succedded-----
+//--test7 Succedded-----
+//--test8 Succedded-----
 function test1ToTest3(){
   var output = document.getElementById('output');
   var x= prompt("Enter a number of counts to loop");
@@ -77,7 +79,7 @@ function test6() {
 
 //--test7: reCreate test6 with def method using if condition
 function test7() {
-  var output = document.getElementById('output');
+
   var total = 0;
 
   for (var i = 0; i <= 1000; i++) {
@@ -89,4 +91,14 @@ function test7() {
 
   output.innerHTML+= "Grand Total: " + total + "<br>";
 }
-test7();
+
+
+//--test8: Use loop in Array
+function test8() {
+  var output = document.getElementById('output');
+  var users = ['Mark', 'Dino', 'Jero', 'Ethan'];
+  for (var i = 0; i < users.length; i++) {
+    output.innerHTML+= users[i] + '<br>';
+  }
+}
+test8();
