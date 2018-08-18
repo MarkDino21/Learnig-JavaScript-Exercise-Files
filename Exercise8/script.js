@@ -3,9 +3,13 @@
 //--test3 Succedded-----
 //--test4 Succedded-----
 //--test5 Succedded-----
+//--test6 Succedded-----
+//--test7 Succedded-----
+//--test8 Succedded-----
+
+var output = document.getElementById('output');
 
 function test1ToTest3(){
-  var output = document.getElementById('output');
   var x= prompt("Enter a number of counts to loop");
 
   while (Number.isNaN(parseInt(x))) {
@@ -31,7 +35,6 @@ function test1ToTest3(){
 
 //--test4: Use Nested loop to create a table with 10 row and 2 col
 function test4() {
-  var output = document.getElementById('output');
   var html = "<table>"
   for (var row = 0; row < 10; row++) {
     html+= "<tr>"
@@ -46,7 +49,6 @@ function test4() {
 
 //--test5: recreate test4 with 10 row and 5 col. make the content number from 1 to 50
 function test5() {
-  var output = document.getElementById('output');
   var html = "<table>"
   var num = 1;
 
@@ -61,3 +63,47 @@ function test5() {
   html+= "</table>";
   output.innerHTML+= html;
 }
+
+//--test6: Loop to 1000, multiply its number to 5, then add them all to the last
+function test6() {
+  var total = 0;
+
+  for (var i = 0; i <= 1000; i+=5) {
+    total+=i;
+    output.innerHTML+= i + "<br>";
+  }
+
+  output.innerHTML+= "Total: " + total + "<br>";
+}
+
+//--test7: reCreate test6 with def method using if condition
+function test7() {
+  var total = 0;
+
+  for (var i = 0; i <= 1000; i++) {
+    if (i % 5 === 0) {
+      total+=i;
+      output.innerHTML+="Value of i = " + i + ". Sub total = " + total + "<br>";
+    }
+  }
+
+  output.innerHTML+= "Grand Total: " + total + "<br>";
+}
+
+
+//--test8: Use loop in Array
+function test8() {
+  var users = ['Mark', 'Dino', 'Jero', 'Ethan'];
+  for (var i = 0; i < users.length; i++) {
+    output.innerHTML+= users[i] + '<br>';
+  }
+}
+
+//--test9: Use loop in Object
+function test9() {
+  var org = {color: 'green', hair: "orange", weapon: 'Axe', level: 1, power: 100};
+  for (var i in org) {
+    output.innerHTML += i + " = " + org[i] + "<br>";
+  }
+}
+ test9();
