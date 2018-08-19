@@ -23,3 +23,11 @@ function mySub() {
   var total = a - b;
   test1Calc(a, b, op, total);
 }
+
+function myMul() {
+  var a = Number(num1.value);
+  var b = Number(num2.value);
+  var op = 'x'
+  var total = a * b;
+  test1Calc(a, b, op, total);
+}
