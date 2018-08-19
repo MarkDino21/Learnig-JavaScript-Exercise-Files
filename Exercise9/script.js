@@ -31,3 +31,10 @@ function myMul() {
   var total = a * b;
   test1Calc(a, b, op, total);
 }
+function myDiv() {
+  var a = Number(num1.value);
+  var b = Number(num2.value);
+  var op = '/'
+  var total = a / b;
+  test1Calc(a, b, op, total);
+}
