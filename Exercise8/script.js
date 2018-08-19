@@ -101,9 +101,9 @@ function test8() {
 
 //--test9: Use loop in Object
 function test9() {
-  var org = {color: 'green', hair: "orange", weapon: 'Axe', level: 1, power: 100};
-  for (var i in org) {
-    output.innerHTML += i + " = " + org[i] + "<br>";
+  var orc = {color: 'green', hair: "orange", weapon: 'Axe', level: 1, power: 100};
+  for (var i in orc) {
+    output.innerHTML += i + " = " + orc[i] + "<br>";
   }
 }
  test9();

@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+<head>
+  <title>Simple calculator</title>
+  <style>
+    #control, #output{
+      padding: 10px;
+      margin: 10px;
+    }
+    #output{
+      width: 250px;
+      height:100px;
+      background-color: darkgreen;
+      color: white;
+      overflow: scroll;
+      overflow-x: hidden;
+      overflow-y: auto;
+    }
+  </style>
+</head>
+<body>
+  <main id="myCalc">
+    <section id="control">
+      <label for="num1">Num1: </label>
+      <input type="text" name="txtNum1" id="num1"><br>
+      <label for="num2">Num2: </label>
+      <input type="text" name="txtNum2" id="num2"><br>
+      <br>
+      <input type="button" onclick="myAdd()" name="" id="btnAdd" value="Add">
+      <input type="button" onclick="mySub()" name="" id="btnSub" value="Subtract">
+      <input type="button" onclick="myMul()" name="" id="btnMul" value="Multiply">
+      <input type="button" onclick="myDiv()" name="" id="btnDiv" value="Divide">
+      <br>
+    </section>
+
+    <section id="output"></section><br>
+  </main>
+
+
+  <script type="text/javascript" src="script.js"></script>
+</body>
+</html>
