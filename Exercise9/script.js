@@ -5,7 +5,8 @@ var num1 = document.getElementById('num1');
 var num2 = document.getElementById('num2');
 
 function test1Calc(num1, num2, op, total) {
-  output.innerHTML+= num1 + " " + op + " " + num2 + " = " + total + "<br>";
+  output.innerHTML= "<p>"+num1 + " " + op + " " + num2 + " = " + total + "</p>" + output.innerHTML;
+  output.childNodes[1].style.color= "black";
 }
 
 function myAdd() {

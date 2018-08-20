@@ -3,9 +3,12 @@
 <head>
   <title>Simple calculator</title>
   <style>
-    #control, #output{
+    #control, #output, h2{
       padding: 10px;
       margin: 10px;
+    }
+    #num1, #num2{
+      margin-bottom: 0.3rem;
     }
     #output{
       width: 250px;
@@ -16,16 +19,28 @@
       overflow-x: hidden;
       overflow-y: auto;
     }
+    #output p{
+      line-height: 0.2rem;
+    }
+    #myCalc{
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 20px;
+      width: 300px;
+      padding: 10px;
+      box-shadow: 1px 0px 10px 1px black;
+      border-radius: 3%;
+    }
   </style>
 </head>
 <body>
   <main id="myCalc">
+    <h2>Simple Calculator</h2>
     <section id="control">
       <label for="num1">Num1: </label>
       <input type="text" name="txtNum1" id="num1"><br>
       <label for="num2">Num2: </label>
       <input type="text" name="txtNum2" id="num2"><br>
-      <br>
       <input type="button" onclick="myAdd()" name="" id="btnAdd" value="Add">
       <input type="button" onclick="mySub()" name="" id="btnSub" value="Subtract">
       <input type="button" onclick="myMul()" name="" id="btnMul" value="Multiply">
