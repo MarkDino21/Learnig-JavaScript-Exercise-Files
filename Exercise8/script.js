@@ -106,4 +106,14 @@ function test9() {
     output.innerHTML += i + " = " + orc[i] + "<br>";
   }
 }
- test9();
+
+// --test10: reCreate test3 by Using Do While Loop instead of While Loop
+function test10() {
+  do {
+    var x = prompt("Enter a valid number to loop.")
+  } while (Number.isNaN(parseInt(x)));
+  for (var i = 1; i <= x; i++) {
+    output.innerHTML+= "count " + i + "<br>";
+  }
+}
+ test10();
