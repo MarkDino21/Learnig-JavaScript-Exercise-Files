@@ -18,13 +18,11 @@ function crack() {
 }
 
 function check(a, b) {
-  let c = "";
   if (a > b) {
-    c = "L";
+    return "L";
   } else if (a < b) {
-    c = "H";
+    return "H";
   } else {
-    c = b;
+    return b;
   }
-  return c;
 }
