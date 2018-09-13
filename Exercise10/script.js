@@ -10,30 +10,21 @@ for (x = 0; x < 3; x++) {
 // output.innerHTML = cCode + "<br>";
 
 function crack() {
-  let code = "";
-  if (Number(c1.value) > cCode[0]) {
-    code += "L";
-  } else if (Number(c1.value) < cCode[0]) {
-    code += "H";
-  } else {
-    code += cCode[0];
+  let guess = [c1.value, c2.value, c3.value];
+  for (i = 0; i < 3; i++) {
+    output.innerHTML += check(guess[i], cCode[i]);
   }
+  output.innerHTML += "<br>";
+}
 
-  if (Number(c2.value) > cCode[1]) {
-    code += "L";
-  } else if (Number(c2.value) < cCode[1]) {
-    code += "H";
+function check(a, b) {
+  let c = "";
+  if (a > b) {
+    c = "L";
+  } else if (a < b) {
+    c = "H";
   } else {
-    code += cCode[1];
+    c = b;
   }
-
-  if (Number(c3.value) > cCode[2]) {
-    code += "L";
-  } else if (Number(c3.value) < cCode[2]) {
-    code += "H";
-  } else {
-    code += cCode[2];
-  }
-
-  output.innerHTML += code + "<br>";
+  return c;
 }
