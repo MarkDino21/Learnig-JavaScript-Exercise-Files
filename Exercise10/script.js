@@ -7,7 +7,7 @@ let cCode = [];
 for (x = 0; x < 3; x++) {
   cCode.push(Math.floor(Math.random() * 9 + 1));
 }
-output.innerHTML = cCode + "<br>";
+// output.innerHTML = cCode + "<br>";
 
 function crack() {
   let code = "";
