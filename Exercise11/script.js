@@ -16,7 +16,3 @@ function guess(secret) {
     guess(prompt("Guess again"));
   }
 }
-
-function question1() {
-  output.innerHTML = Math.floor(Math.random() * 5);
-}
